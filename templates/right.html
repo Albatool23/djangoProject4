@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+      h2,h3,h4{
+
+           text-align: center;
+           margin-top: 60px;
+       }
+
+         .box{
+            border: black 1px solid;
+           text-align: center;
+           margin: 20px 150px 30px 730px;
+           height: 200px;
+           width: 200px;
+             background-color: green;
+
+       }
+
+         p{
+             color:white ;
+         }
+      </style>
+</head>
+<body>
+<h2> Welcome to the Great Number Game! </h2>
+<h3>  dIam thinking of a number between 1 and 100 </h3>
+<h4>  Toke a guess. <h4>
+
+<div class="box">
+   <p>  was the number!</p>
+    </div>
+    <form method="POST"  name="innum"  >
+           {% csrf_token %}
+          <input type="text"  name="innum"><br><br>
+    </form>
+
+    <button> Again  </button>
+</body>
+</html>
